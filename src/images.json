@@ -1,67 +1,49 @@
 [
     {
         "id": 1,
-        "image": " ../public/images/Screen Shot 2019-05-04 at 12.03.54 PM.png"
+        "image":  "https://i.imgur.com/rkd2M1B.png"
      },
  
      {
          "id": 2,
-         "image": "../public/images/Screen Shot 2019-05-04 at 12.03.34 PM.png"
+         "image": "https://i.imgur.com/sHlaIq1.png"
      },
  
      {
          "id": 3,
-         "image": "../public/images/Screen Shot 2019-05-04 at 12.03.26 PM.png"
+         "image": "https://i.imgur.com/mitOaL1.png"
      },
  
      {
          "id": 4,
-         "image": "../public/images/Screen Shot 2019-05-04 at 12.03.15 PM.png"
+         "image": "https://i.imgur.com/Er0P6fr.png"
      },
  
      {
          "id": 5,
-         "image": "../public/images/Screen Shot 2019-05-04 at 12.03.05 PM.png"
+         "image": "https://i.imgur.com/uRi0AU4.png"
      },
  
      {
          "id": 6,
-         "image": "../public/images/Screen Shot 2019-05-04 at 12.02.12 PM.png"
+         "image": "https://i.imgur.com/1B7impl.png"
      },
  
  
      {
          "id": 7,
-         "image": "../public/images/Screen Shot 2019-05-04 at 12.02.02 PM.png"
+         "image": "https://i.imgur.com/0UtiPTg.png"
      },
  
  
      {
          "id": 8,
-         "image": "../public/images/Screen Shot 2019-05-04 at 12.01.54 PM.png"
+         "image": "https://i.imgur.com/AtQY3Ok.png"
      },
  
  
      {
          "id": 9,
-         "image": "../public/images/Screen Shot 2019-05-04 at 12.01.47 PM.png"
-     },
- 
- 
-     {
-         "id": 10,
-         "image": "../public/images/Screen Shot 2019-05-04 at 12.01.41 PM.png"
-     },
- 
- 
-     {
-         "id": 11,
-         "image": "../public/images/Screen Shot 2019-05-04 at 12.01.31 PM.png"
-     },
- 
- 
-     {
-         "id": 12,
-         "image": "../public/images/Screen Shot 2019-05-04 at 12.01.22 PM.png"
+         "image": "https://i.imgur.com/5dNuv3x.png"
      }
  ]
