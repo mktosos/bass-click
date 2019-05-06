@@ -3,7 +3,7 @@ import './App.css';
 import images from "./images.json";
 import Wrapper from "./components/Wrapper"
 import ImageCard from "./components/ImageCard/index"
-import Score from "./components/Score"
+
 
 class App extends React.Component {
 
@@ -16,18 +16,7 @@ class App extends React.Component {
     clickedImages: []
   };
 
-  handleShuffle = id => {
-    if (!this.state.clickedImages.includes(id)) {
-      this.setState({
-        score: this.state.score + 1,
-        clickedImages: [...this.state.clickedImages, id]
-      });
-    }
-    this.setState({
-      images: images.sort(() => Math.random() - 0.5),
-      totalClick: this.state.totalClick + 1
-    });
-  };
+  
   
   render(){
   return (
