@@ -20,7 +20,8 @@ class App extends React.Component {
     if (!this.state.clickedImages.includes(id)) {
       this.setState({
         score: this.state.score + 1,
-        clickedImages: [...this.state.clickedImages, id]
+        clickedImages: [...this.state.clickedImages, id],
+        guess: " "
       });
     }
     this.setState({
@@ -41,7 +42,6 @@ class App extends React.Component {
       <h4>Score: {this.state.score}</h4>
       <h4>Top Score: {this.state.topScore}</h4>
       <h4>{this.state.guess}</h4>
-      <button onClick = {this.handleShuffle}>click to handleShuffle</button>
       
       
       <Wrapper>
@@ -50,6 +50,7 @@ class App extends React.Component {
             key={image.id}
             id={image.id}
             image={image.image}
+            handleShuffle={this.handleShuffle}
           />
         ))}
       </Wrapper>
