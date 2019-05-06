@@ -2,7 +2,9 @@ import React from 'react';
 import './App.css';
 import images from "./images.json";
 import Wrapper from "./components/Wrapper"
-import ImageCard from "./components/ImageCard"
+import ImageCard from "./components/ImageCard/index"
+import Score from "./components/Score"
+
 class App extends React.Component {
 
  
@@ -11,21 +13,32 @@ class App extends React.Component {
     score: 0,
     guess: "Click on an image to start playing",
     topScore: 0,
-    selected: []
+    clickedImages: []
   };
 
-
-
-
+  handleShuffle = id => {
+    if (!this.state.clickedImages.includes(id)) {
+      this.setState({
+        score: this.state.score + 1,
+        clickedImages: [...this.state.clickedImages, id]
+      });
+    }
+    this.setState({
+      images: images.sort(() => Math.random() - 0.5),
+      totalClick: this.state.totalClick + 1
+    });
+  };
   
   render(){
   return (
     <div className="App">
       <header className="App-header">
-        
-        <h1>
+      <h1>
           Clicky Game 
-        </h1>
+      </h1>
+      <h4>Score: {this.state.score}</h4>
+      <h4>Top Score: {this.state.topScore}</h4>
+      <h4>{this.state.guess}</h4>
       
       
       <Wrapper>
